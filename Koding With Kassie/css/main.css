@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Muli');
+
+body {
+  font-family: "Montserrat",sans-serif;
+  text-align: center;
+  background-color: #f8f4f1;
+}
+
+h1 {
+  font-family: "Muli", sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+h2 {
+  font-family: "Muli", sans-serif;
+  text-transform: capitalize;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navigation Styles */
+
+#navigation {
+  background-color: #eae0de;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  display: inline-block;
+}
+
+#navigation h1 {
+  font-size: 36px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 25px;
+}
+
+/*Header Styles */
+header {
+  padding-top: 30px;
+  background-image: url(../images/palms.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+  min-height: 400px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header p {
+  font-size: 28px;
+}
+
+/* About Styles */
+#about {
+  padding-top: 42px;
+  padding-bottom: 65px;
+}
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+#quote1 {
+  text-transform: uppercase;
+}
+/*Skills Styles */
+
+#skills {
+background-color: #eddad4;
+padding-top: 28px;
+padding-bottom: 30px;
+}
+
+.skills-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 36px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Work Styles */
+.work {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+/* Youtube Styles*/
+.youtube {
+  padding-bottom: 45px;
+}
+
+/*Recommendations Styles */
+p.sarah {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  line-height: 25px;
+  background-color: #fff;
+  border: 8px solid #666;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: 2px 2px 4px #888;
+  box-shadow: 2px 2px 4px #888;
+}
+
+p.sarah:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 100px;
+  border: 25px solid;
+  border-color: #666 transparent transparent #666;
+}
+/*Contact Forms */
+.contact {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-transform: none;
+  background-color: #f5f5f5;
+
+}
+form {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+input,
+textarea {
+  border: 2px solid #dfdfdf;
+  padding: 10px 15px;
+  border-radius: 2px;
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: border .3s ease;
+}
+
+textarea {
+  height: 250px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #005EC8;
+}
+
+button {
+  border: 1px solid black;
+  color: black;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  outline: 0;
+  padding: 6px 8px;
+  margin-top: 20px;
+  transition: transform .3s ease;
+  border-radius: 2px;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+#contactform button {
+background-color: #f5f5f5;
+}
+
+/*Footer Styles */
+footer {
+  background-color: #e5d8d5;
+  padding-top: 55px;
+  padding-bottom: 35px;
+}
+
+.socialmedia li {
+  display: inline-block;
+  padding: 14px 16px;
+  font-size: 18px;
+}
