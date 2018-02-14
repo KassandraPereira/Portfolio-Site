@@ -1,60 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Muli');
+@import url('https://fonts.googleapis.com/css?family=Bilbo|Montserrat');
+/* --------------------------------------------------------------------------
+Base styles:
+----------------------------------------------------------------------------- */
+/* Fix to include padding and border in the total width for each element */
+* {
+  box-sizing: border-box;
+}
+
+/* Fix for responsive images */
+img {
+  max-width: 100%;
+}
 
 body {
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   text-align: center;
+  margin: 0 auto;
   background-color: #f8f4f1;
 }
 
-h1 {
-  font-family: "Muli", sans-serif;
-  text-transform: uppercase;
-  font-size: 28px;
-}
-
 h2 {
-  font-family: "Muli", sans-serif;
-  text-transform: capitalize;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-}
-
-/* Navigation Styles */
-
-#navigation {
-  background-color: #eae0de;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  display: inline-block;
-}
-
-#navigation h1 {
-  font-size: 36px;
-}
-
-nav a {
-  color: black;
-  text-decoration: none;
   text-transform: uppercase;
-  padding: 15px 25px;
+  font-size: 48px;
 }
 
-nav a:hover {
-  text-decoration: underline;
-}
-
-.hamburger {
-  display: none;
-}
-
-
-/*Header Styles */
+/* ------------------------------------
+HEADER
+-------------------------------------*/
 header {
   padding-top: 30px;
-  background-image: url(../images/palms.jpg);
+  background-image: url(../images/walls.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -66,9 +42,95 @@ header {
   justify-content: center;
 }
 
+header h1 {
+  font-size: 76px;
+  margin-bottom: 20px;
+}
+
 header p {
   font-size: 28px;
+  text-transform: capitalize;
+  margin-top: 15px;
 }
+
+
+/* ------------------------------------
+HEADER END
+-------------------------------------*/
+/* ------------------------------------
+NAV
+-------------------------------------*/
+nav {
+  background-color: #eae0de;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+nav a {
+  font-family: "Josefin Sans",sans-serif;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 25px 35px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* ------------------------------------
+NAV END
+-------------------------------------*/
+h2 {
+  font-family: "Josefin Sans",sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  color: black;
+}
+
+h3 {
+  font-family: "Josefin Sans",sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+
+/* ------------------------------------
+SERVICES
+-------------------------------------*/
+.service {
+  background-color: #f5f5f5;
+  padding: 55px;
+  margin-top: 75px;
+}
+
+.service-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 55px;
+}
+
+.service a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service button {
+background-color: #f5f5f5;
+}
+
+/* ------------------------------------
+SERVICES
+-------------------------------------*/
+
 
 /* About Styles */
 #about {
@@ -84,12 +146,18 @@ header p {
 #quote1 {
   text-transform: uppercase;
 }
-/*Skills Styles */
+
+p#quote1 {
+  padding-top: 86px;
+}
+
+/* Skills Styles */
 
 #skills {
 background-color: #eddad4;
-padding-top: 45px;
+padding-top: 25px;
 padding-bottom: 45px;
+margin-top: 15px;
 }
 
 .skills-wrapper {
@@ -101,7 +169,9 @@ padding-bottom: 45px;
   margin: 0 auto;
 }
 
+
 /* Work Styles */
+
 #work {
   padding-top: 45px;
   padding-bottom: 45px;
@@ -109,7 +179,7 @@ padding-bottom: 45px;
 
 /* Youtube Styles*/
 #youtube {
-  padding-bottom: 250px;
+  padding-bottom: 88px;
 }
 
 #youtube p {
@@ -120,9 +190,8 @@ padding-bottom: 45px;
 /*Recommendations Styles */
 
 #recommendation {
-  background-color: #e5d8d5;
-  padding-top: 45px;
-  padding-bottom: 75px;
+/*  background-color: #e5d8d5;*/
+
 }
 
 #recommendation p {
@@ -130,7 +199,8 @@ padding-bottom: 45px;
   margin: 0 auto;
 }
 
-/*Contact Forms */
+/* Contact Styles */
+
 .contact {
   font-family: "Montserrat", sans-serif;
   color: black;
@@ -187,16 +257,106 @@ button:hover {
 #contactform button {
 background-color: #f5f5f5;
 }
-
-/*Footer Styles */
+/* ------------------------------------
+FOOTER
+-------------------------------------*/
 footer {
+  font-family: "Josefin Sans", sans-serif;
   background-color: #e5d8d5;
-  padding-top: 55px;
+  padding-top: 24px;
   padding-bottom: 35px;
+  overflow: overlay;
 }
 
-.socialmedia li {
-  display: inline-block;
+footer p {
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding: 40px;
+}
+
+
+.social li {
+  display: inline;
   padding: 14px 16px;
-  font-size: 18px;
+}
+
+.social i {
+  font-size: 24px;
+}
+
+.social i:hover {
+  transform: translateX(-4px);
+  transition: all 0.5s ease-in-out;
+}
+/* ------------------------------------
+FOOTER
+-------------------------------------*/
+@media only screen and (max-width: 925px) {
+  .nav-links {
+    height: 0;
+    overflow: hidden;
+    background-color: #f5f5f5;
+  }
+  .nav-links a {
+    display: block;
+  }
+
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  /* Styles to apply with JS to slide the menu out or down */
+  .menu-open {
+    height: 300px;
+    transition: all .5s ease-in-out;
+  }
+
+}
+@media only screen and (max-width: 800px) {
+  .homepage-imagery {
+    display: block;
+  }
+
+  .service-wrapper {
+    display: block;
+  }
+
+  .gallery-wrapper {
+    display: block;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 17.5px;
+  }
+
+  p {
+    font-size: 13.5px;
+  }
+
+  input,
+  textarea {
+    font-size: 13.5px;
+  }
+
+  .social i {
+    font-size: 15px;
+  }
+
+  footer p {
+    font-size: 11px;
+  }
 }
